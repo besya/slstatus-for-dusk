@@ -76,10 +76,21 @@ static const char unknown_str[] = "n/a";
  * username            username of current user        NULL
  * vol_perc            OSS/ALSA volume in percent      mixer file (/dev/mixer)
  *                                                     NULL on OpenBSD/FreeBSD
+ * widgets_battery     battery icon and percentage     battery name (BAT0)
+ * widgets_cpu         inline cpu usage in percent,    NULL
+ *                     cpu frequency in GHz and
+ *                     temp in C
+ * widgets_disk        used disk space in GB           mountpoint path (/)
+ * widgets_ram         used memory in GB               NULL
+ *
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
 static const struct arg args[] = {
-	/* function format          argument      status_no     update_interval */
-	{ datetime, "%s",           "%F %T",      "1",          1 },
+	/* function          format        argument      status_no     update_interval */
+	{ datetime,          "%s",         "%F %T",      "1",          1 },
+	/* { widgets_battery,   " / %s",      "BAT0",       "2",          1 }, */
+	/* { widgets_disk,      " / 󰋊 %s",    "/",          "3",          1 }, */
+	/* { widgets_ram,       " /  %s",    NULL,         "4",          1 }, */
+	/* { widgets_cpu,       " /  %s",    NULL,         "5",          1 }, */
 };

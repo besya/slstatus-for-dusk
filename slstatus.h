@@ -2,6 +2,12 @@
 
 extern char **environ;
 
+/* widgets */
+const char *widgets_cpu(const char *unused);
+const char *widgets_ram(const char *unused);
+const char *widgets_disk(const char *path);
+const char *widgets_battery(const char *bat);
+
 /* backlight */
 const char *backlight_perc(const char *);
 

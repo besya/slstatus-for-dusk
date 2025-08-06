@@ -30,6 +30,7 @@ COM =\
 	components/uptime\
 	components/user\
 	components/volume\
+	components/widgets\
 	components/wifi
 
 all: slstatus
