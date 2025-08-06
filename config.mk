@@ -14,9 +14,9 @@ VERSION = 0
 #    MPD_LOOP_TEXT       The transition text that is printed before looping the title
 #
 # Uncomment the below to use mpdonair.
-#MPDLIBS = -lmpdclient -lgrapheme
-#MPDINCS = -I/usr/local/lib
-#MPDFLAGS = -DMPD_TITLE_LENGTH=20 -DMPD_ON_TEXT_FITS=NO_SCROLL -DMPD_LOOP_TEXT='" ~ "'
+MPDLIBS = -lmpdclient -lgrapheme
+MPDINCS = -I/usr/local/lib
+MPDFLAGS = -DMPD_TITLE_LENGTH=20 -DMPD_ON_TEXT_FITS=NO_SCROLL -DMPD_LOOP_TEXT='" ~ "'
 
 # paths
 PREFIX = /usr/local
